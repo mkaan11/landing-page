@@ -1,0 +1,228 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+  Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+}
+
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+}
+
+
+.left-right-padding{
+  padding-left: 180px;
+  padding-right: 180px;
+}
+
+
+.header {
+  background-color: #1f2937;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 16px;
+}
+
+
+.header .header-left li  { /* Header Logo*/
+  color: #f9faf8;
+  font-size: 24px;
+  margin: 0;
+  font-weight: 700;
+
+}
+
+.header .header-right ul { /* Header link container */
+  display: flex;
+  gap: 16px;
+
+}
+
+a {
+  text-decoration: none;
+  color: #e5e7eb;
+
+
+}
+
+.header .header-right li a { /* Header Link 1-2-3 */
+
+  font-size: 18px;
+
+}
+
+.intro {
+  display: flex;
+  background-color: #1f2937;
+  padding-top: 112px;
+  padding-bottom: 112px;
+  gap: 32px;
+
+}
+
+.intro .intro-left {
+
+}
+
+.intro .intro-left h1 { /* Intro header - This website is awesome */
+  color: #f9faf8;
+  font-size: 48px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.intro .intro-left  { /* Intro Subtext */
+  color: #e5e7eb;
+  font-size: 18px;
+}
+.intro .intro-left .intro-sign-button  { /* Intro sign up button*/
+  background-color: #3882f6;
+  color: #e5e7eb;
+  border: none;
+  padding: 8px 32px 8px; /* top | horizontal | bottom */
+  border-radius: 8px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+
+}
+
+
+.intro .intro-right img {
+  max-width: 400px;
+  height: auto;
+}
+
+
+.information {
+  background-color: white;
+
+}
+
+.information h2 {
+  font-size: 36px;
+  color: #1f2937;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.information .duck-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  padding-bottom: 112px;
+
+}
+.duck-container .duck-info img { /*Duck pics */
+  width: 135px;
+  height: 135px;
+  border: 3px solid #3d84f5;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+
+
+}
+
+ 
+.duck-container .duck-info .duck-text {
+  color: hsl(0, 0%, 38%);
+  text-align: center;
+  padding-top: 8px;
+  font-size: 14px;
+  max-width: 135px;
+}
+
+.quote {
+  background-color: #e5e7eb;
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.quote .quote-text {
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 50;
+  padding-left: 135px;
+  padding-right: 95px;
+
+}
+
+.quote .quote-author {
+  font-size: 20px;
+  text-align: right;
+  padding-right: 130px;
+  text-align: right;
+  font-weight: 500;
+
+}
+
+.sign-up {
+  background-color: white;
+
+}
+
+.sign-up .signup-container { /*The thing that takes sign items in itsels */
+  display: flex;
+  background-color: #3882f6;
+  margin-top: 130px;
+  margin-bottom: 130px;
+  color: white;
+  padding-top: 45px;
+  padding-bottom: 45px;
+  padding-left: 135px;
+  padding-right: 135px;
+  justify-content: space-between;
+  border-radius: 8px; /* corners*/
+  align-items: center;
+
+}
+
+/* I put signup header and text into a seperate div,
+  They didn't work as I intended when they were direct flex items.
+*/
+.sign-up .signup-texts .signup-header {
+  font-weight: bold;
+  font-size: 20px;
+  margin: 0px;
+
+}
+.sign-up .signup-texts .signup-text {
+  margin: 0px;
+  color: #d7dfeb;
+
+}
+.sign-up .signup-container button {
+  color: white;
+  background-color: #3882f6;
+  border: 2px solid #e5e7eb;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 8px; /* corners*/
+  padding: 0px 30px 0px 30px; /* top | right | bottom | left */
+  padding-block: 7px;
+}
+
+.footer {
+  background-color: #1f2937;
+  text-align: center;
+  color: #e5e7eb;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer a:first-of-type  {
+  font-weight: bold;
+}
